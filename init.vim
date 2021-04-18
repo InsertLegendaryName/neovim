@@ -20,7 +20,8 @@ set scrolloff=8
 set termguicolors
 set signcolumn=yes
 set encoding=UTF-8
-set guifont=Hack\ Nerd\ Font\ 11
+set termguicolors
+"set guifont=Hack 11
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
@@ -31,9 +32,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'ryanoasis/vim-devicons'
+Plug 'vim-airline/vim-airline'
 
 call plug#end()
 
 colorscheme gruvbox
 map <silent> <C-n> :NERDTreeFocus<CR>
+let g:airline_powerline_fonts = 1
 
