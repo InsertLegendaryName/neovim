@@ -1,5 +1,5 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
-source $HOME/.config/nvim/themes/gruvbox.vim
+source $HOME/.config/nvim/themes/archery.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 
 set nocompatible
@@ -31,4 +31,4 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 map <silent> <C-n> :NERDTreeFocus<CR>
 let g:airline_powerline_fonts = 1
-"colorscheme onedark 
+"colorscheme archery 
