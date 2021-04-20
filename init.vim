@@ -1,3 +1,7 @@
+"source $HOME/.config/nvim/vim-plug/plugins.vim
+"source $HOME/.config/nvim/themes/gruvbox.vim
+source $HOME/.config/nvim/plug-config/coc.vim
+
 set nocompatible
 filetype off
 syntax on
@@ -27,16 +31,27 @@ highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 call plug#begin('~/.config/nvim/plugged')
 
-Plug 'morhetz/gruvbox'
-Plug 'tpope/vim-fugitive'
-Plug 'preservim/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'ryanoasis/vim-devicons'
-Plug 'vim-airline/vim-airline'
+    Plug 'tpope/vim-fugitive'
+
+    "#This is the nerdtree pluggins
+    Plug 'preservim/nerdtree'
+    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
+
+    Plug 'ctrlpvim/ctrlp.vim'
+    Plug 'vim-airline/vim-airline'
+
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+    "#Themes
+    Plug 'morhetz/gruvbox'
+	Plug 'joshdick/onedark.vim'
+
+    "#Autocompletion
+    Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
-colorscheme gruvbox
 map <silent> <C-n> :NERDTreeFocus<CR>
 let g:airline_powerline_fonts = 1
-
+colorscheme onedark 
