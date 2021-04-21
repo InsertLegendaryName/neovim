@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'
     Plug 'vim-airline/vim-airline'
     Plug 'pappasam/coc-jedi', { 'do': 'yarn install --frozen-lockfile && yarn build' }
+    Plug 'preservim/nerdcommenter'
 
 
     "#Themes
