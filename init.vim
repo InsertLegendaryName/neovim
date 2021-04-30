@@ -1,6 +1,8 @@
 source $HOME/.config/nvim/vim-plug/plugins.vim
 source $HOME/.config/nvim/themes/sonokai.vim
 source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/plugged/cp.vim
+
 
 set nocompatible
 filetype off
@@ -25,11 +27,13 @@ set termguicolors
 set signcolumn=yes
 set encoding=UTF-8
 set termguicolors
+set nohlsearch
 "set guifont=Hack 11
 
 highlight ColorColumn ctermbg=0 guibg=lightgrey
 
 map <silent> <C-n> :NERDTreeFocus<CR>
+let mapleader=" "
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
@@ -47,3 +51,5 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ }
 
 "nnoremap <Space>
+map ñl :!clear && g++ %<CR> 
+map <F5> :!python3 %<CR>
